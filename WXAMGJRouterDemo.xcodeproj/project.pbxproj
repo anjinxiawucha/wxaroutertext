@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A421181C8600AFD5DB /* AppDelegate.m */; };
-		B84E86A821181C8600AFD5DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A721181C8600AFD5DB /* ViewController.m */; };
-		B84E86AB21181C8600AFD5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86A921181C8600AFD5DB /* Main.storyboard */; };
 		B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AC21181C8800AFD5DB /* Assets.xcassets */; };
 		B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */; };
 		B84E86B321181C8800AFD5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86B221181C8800AFD5DB /* main.m */; };
@@ -17,15 +15,16 @@
 		B84E86C021182BFF00AFD5DB /* WXATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86BF21182BFF00AFD5DB /* WXATabBarController.m */; };
 		B84E86C321182C2200AFD5DB /* WXANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86C221182C2200AFD5DB /* WXANavigationController.m */; };
 		B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86C521182C3400AFD5DB /* WXABaseController.m */; };
+		B84E86D92118390B00AFD5DB /* WXAHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86D82118390B00AFD5DB /* WXAHomeController.m */; };
+		B84E86DC2118391E00AFD5DB /* WXAShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86DB2118391E00AFD5DB /* WXAShopController.m */; };
+		B84E86DF2118393200AFD5DB /* WXADetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86DE2118393200AFD5DB /* WXADetailController.m */; };
+		B84E86E22118394300AFD5DB /* WXAMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86E12118394300AFD5DB /* WXAMineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B84E86A021181C8600AFD5DB /* WXAMGJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXAMGJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E86A321181C8600AFD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84E86A421181C8600AFD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B84E86A621181C8600AFD5DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B84E86A721181C8600AFD5DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B84E86AA21181C8600AFD5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84E86AC21181C8800AFD5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84E86AF21181C8800AFD5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84E86B121181C8800AFD5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +37,14 @@
 		B84E86C221182C2200AFD5DB /* WXANavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXANavigationController.m; sourceTree = "<group>"; };
 		B84E86C421182C3400AFD5DB /* WXABaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXABaseController.h; sourceTree = "<group>"; };
 		B84E86C521182C3400AFD5DB /* WXABaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXABaseController.m; sourceTree = "<group>"; };
+		B84E86D72118390B00AFD5DB /* WXAHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAHomeController.h; sourceTree = "<group>"; };
+		B84E86D82118390B00AFD5DB /* WXAHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAHomeController.m; sourceTree = "<group>"; };
+		B84E86DA2118391E00AFD5DB /* WXAShopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAShopController.h; sourceTree = "<group>"; };
+		B84E86DB2118391E00AFD5DB /* WXAShopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAShopController.m; sourceTree = "<group>"; };
+		B84E86DD2118393200AFD5DB /* WXADetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXADetailController.h; sourceTree = "<group>"; };
+		B84E86DE2118393200AFD5DB /* WXADetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXADetailController.m; sourceTree = "<group>"; };
+		B84E86E02118394300AFD5DB /* WXAMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAMineController.h; sourceTree = "<group>"; };
+		B84E86E12118394300AFD5DB /* WXAMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAMineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +81,10 @@
 				B84E86A321181C8600AFD5DB /* AppDelegate.h */,
 				B84E86A421181C8600AFD5DB /* AppDelegate.m */,
 				B84E86BD21182B9E00AFD5DB /* WXABaseController */,
-				B84E86A621181C8600AFD5DB /* ViewController.h */,
-				B84E86A721181C8600AFD5DB /* ViewController.m */,
-				B84E86A921181C8600AFD5DB /* Main.storyboard */,
+				B84E86CB2118382E00AFD5DB /* Home */,
+				B84E86CF2118382E00AFD5DB /* Shop */,
+				B84E86D32118382F00AFD5DB /* Detail */,
+				B84E86C72118382E00AFD5DB /* Mine */,
 				B84E86AC21181C8800AFD5DB /* Assets.xcassets */,
 				B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */,
 				B84E86B121181C8800AFD5DB /* Info.plist */,
@@ -106,6 +114,142 @@
 				B84E86C521182C3400AFD5DB /* WXABaseController.m */,
 			);
 			path = WXABaseController;
+			sourceTree = "<group>";
+		};
+		B84E86C72118382E00AFD5DB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86C82118382E00AFD5DB /* mode */,
+				B84E86C92118382E00AFD5DB /* view */,
+				B84E86CA2118382E00AFD5DB /* viewController */,
+			);
+			name = Mine;
+			path = WXAMGJRouterDemo/Mine;
+			sourceTree = SOURCE_ROOT;
+		};
+		B84E86C82118382E00AFD5DB /* mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mode;
+			sourceTree = "<group>";
+		};
+		B84E86C92118382E00AFD5DB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B84E86CA2118382E00AFD5DB /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86E02118394300AFD5DB /* WXAMineController.h */,
+				B84E86E12118394300AFD5DB /* WXAMineController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		B84E86CB2118382E00AFD5DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86CC2118382E00AFD5DB /* mode */,
+				B84E86CD2118382E00AFD5DB /* view */,
+				B84E86CE2118382E00AFD5DB /* viewController */,
+			);
+			name = Home;
+			path = WXAMGJRouterDemo/Home;
+			sourceTree = SOURCE_ROOT;
+		};
+		B84E86CC2118382E00AFD5DB /* mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mode;
+			sourceTree = "<group>";
+		};
+		B84E86CD2118382E00AFD5DB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B84E86CE2118382E00AFD5DB /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86D72118390B00AFD5DB /* WXAHomeController.h */,
+				B84E86D82118390B00AFD5DB /* WXAHomeController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		B84E86CF2118382E00AFD5DB /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86D02118382E00AFD5DB /* mode */,
+				B84E86D12118382E00AFD5DB /* view */,
+				B84E86D22118382E00AFD5DB /* viewController */,
+			);
+			name = Shop;
+			path = WXAMGJRouterDemo/Shop;
+			sourceTree = SOURCE_ROOT;
+		};
+		B84E86D02118382E00AFD5DB /* mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mode;
+			sourceTree = "<group>";
+		};
+		B84E86D12118382E00AFD5DB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B84E86D22118382E00AFD5DB /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86DA2118391E00AFD5DB /* WXAShopController.h */,
+				B84E86DB2118391E00AFD5DB /* WXAShopController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		B84E86D32118382F00AFD5DB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86D42118382F00AFD5DB /* mode */,
+				B84E86D52118382F00AFD5DB /* view */,
+				B84E86D62118382F00AFD5DB /* viewController */,
+			);
+			name = Detail;
+			path = WXAMGJRouterDemo/Detail;
+			sourceTree = SOURCE_ROOT;
+		};
+		B84E86D42118382F00AFD5DB /* mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mode;
+			sourceTree = "<group>";
+		};
+		B84E86D52118382F00AFD5DB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B84E86D62118382F00AFD5DB /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				B84E86DD2118393200AFD5DB /* WXADetailController.h */,
+				B84E86DE2118393200AFD5DB /* WXADetailController.m */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +312,6 @@
 			files = (
 				B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */,
 				B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */,
-				B84E86AB21181C8600AFD5DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,26 +323,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */,
-				B84E86A821181C8600AFD5DB /* ViewController.m in Sources */,
 				B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */,
+				B84E86D92118390B00AFD5DB /* WXAHomeController.m in Sources */,
+				B84E86DF2118393200AFD5DB /* WXADetailController.m in Sources */,
 				B84E86C021182BFF00AFD5DB /* WXATabBarController.m in Sources */,
+				B84E86DC2118391E00AFD5DB /* WXAShopController.m in Sources */,
 				B84E86B321181C8800AFD5DB /* main.m in Sources */,
 				B84E86C321182C2200AFD5DB /* WXANavigationController.m in Sources */,
 				B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */,
+				B84E86E22118394300AFD5DB /* WXAMineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B84E86A921181C8600AFD5DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B84E86AA21181C8600AFD5DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
