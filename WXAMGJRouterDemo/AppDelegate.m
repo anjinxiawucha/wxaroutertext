@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXATabBarController.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +26,10 @@
 - (void)defaultConfiguration{
     
     self.window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];    
-    
+    WXATabBarController  *tabController = [[WXATabBarController alloc] init];
+    self.window.rootViewController      = tabController;
+    self.window.backgroundColor         = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
 }
 
 @end
