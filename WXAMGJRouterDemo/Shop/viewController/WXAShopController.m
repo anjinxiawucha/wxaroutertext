@@ -14,24 +14,27 @@
 
 @implementation WXAShopController
 
++ (void)load{
+    
+    [MGJRouter registerURLPattern:@"WXA://shop" toObjectHandler:^id(NSDictionary *routerParameters) {
+        return NSStringFromClass(self);
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UILabel *label              = [[UILabel alloc]initWithFrame:CGRectMake(200, 200, 100, 50)];
+    label.text                  = @"点击页面跳转";
+    label.textColor             = [UIColor blackColor];
+    [self.view addSubview:label];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSString  *controllerName = [MGJRouter objectForURL:@"WXA://shop/childViewController/?version=230&name=王亚"];
+    [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc]init] animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -21,6 +21,14 @@
 
 @implementation WXAHomeController
 
++ (void)load{
+    
+    [MGJRouter registerURLPattern:@"WXA://home" toObjectHandler:^id(NSDictionary *routerParameters) {
+        return NSStringFromClass(self);
+    }];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self tableViewConfig];

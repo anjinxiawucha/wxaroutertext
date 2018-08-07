@@ -10,9 +10,23 @@
 #define WXAPushViewControllerURL_h
 
 /*
+ *首页模块:WXA://home
+ */
+#import "WXAHomeController.h"
+/*
  首页模块cell行情:  WXA://home/homeCell
  */
 #import "WXAHomeCellDetailController.h"
+
+/*
+ *商店模块:WXA://shop
+ */
+#import "WXAShopController.h"
+
+/*
+ *商店自控制器:WXA://shop/childViewController
+ */
+#import "WXAShopChildController.h"
 
 
 #endif /* WXAPushViewControllerURL_h */

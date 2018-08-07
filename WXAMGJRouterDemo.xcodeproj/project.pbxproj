@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839ED9F2119892A004721FD /* WXAShopChildController.m */; };
 		B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A421181C8600AFD5DB /* AppDelegate.m */; };
 		B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AC21181C8800AFD5DB /* Assets.xcassets */; };
 		B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		B839ED9C2119637D004721FD /* WXAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAPrefixHeader.pch; sourceTree = "<group>"; };
 		B839ED9D211964D3004721FD /* WXAPushViewControllerURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAPushViewControllerURL.h; sourceTree = "<group>"; };
+		B839ED9E2119892A004721FD /* WXAShopChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAShopChildController.h; sourceTree = "<group>"; };
+		B839ED9F2119892A004721FD /* WXAShopChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAShopChildController.m; sourceTree = "<group>"; };
 		B84E86A021181C8600AFD5DB /* WXAMGJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXAMGJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E86A321181C8600AFD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84E86A421181C8600AFD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 			children = (
 				B84E86DA2118391E00AFD5DB /* WXAShopController.h */,
 				B84E86DB2118391E00AFD5DB /* WXAShopController.m */,
+				B839ED9E2119892A004721FD /* WXAShopChildController.h */,
+				B839ED9F2119892A004721FD /* WXAShopChildController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */,
+				B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */,
 				B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */,
 				B8734BF021184CA40095F3F2 /* WXAHomeCellDetailController.m in Sources */,
 				B84E86D92118390B00AFD5DB /* WXAHomeController.m in Sources */,
