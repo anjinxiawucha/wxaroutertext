@@ -24,7 +24,7 @@
     [super viewDidLoad];
     [self addChildVC:[[WXAHomeController alloc] init] title:@"首页" image:@"home_icon_home" selectedImage:@"home_icon_home_sel"];
     [self addChildVC:[[WXAShopController alloc] init] title:@"商店" image:@"home_icon_school" selectedImage:@"home_icon_school_sel"];
-    [self addChildVC:[[WXADetailController alloc] init] title:@"孩子详情" image:@"home_icon_children" selectedImage:@"home_icon_children"];
+    [self addChildVC:[[WXADetailController alloc] init] title:@"孩子详情" image:@"home_icon_children" selectedImage:@"home_icon_children_sel"];
     [self addChildVC:[[WXAMineController alloc] init] title:@"我的" image:@"home_icon_me" selectedImage:@"home_icon_me_sel"];
     
 }
