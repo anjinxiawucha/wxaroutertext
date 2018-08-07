@@ -4,7 +4,7 @@
 //
 //  Created by 吴晓安 on 2018/8/6.
 //  Copyright © 2018年 WXA. All rights reserved.
-//
+//  首页控制器
 
 #import "WXAHomeController.h"
 
@@ -26,6 +26,16 @@
     [self tableViewConfig];
 }
 /*********************************************DELEGATE***********************************************/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 2) {
+        
+      NSString *controllerName = [MGJRouter objectForURL:@"WXA://home/homeCell"];
+      [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init] animated:YES];
+    }
+    
+}
 
 /*********************************************PUBLIC*************************************************/
 - (void)tableViewConfig{
