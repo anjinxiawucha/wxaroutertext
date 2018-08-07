@@ -36,12 +36,10 @@
 /*********************************************DELEGATE***********************************************/
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
     
-    if (indexPath.row == 2) {
-        
       NSString *controllerName = [MGJRouter objectForURL:@"WXA://home/homeCell"];
       [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init] animated:YES];
-    }
     
 }
 
