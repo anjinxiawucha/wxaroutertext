@@ -49,7 +49,6 @@ static NSDictionary *parameters;
     NSString *controllerName                = [MGJRouter objectForURL:@"WXA://navigationVC"];
     UINavigationController   *navigationVC  = [[NSClassFromString(controllerName) alloc]initWithRootViewController:childVC];
     [self addChildViewController:navigationVC];
-    
 }
 
 

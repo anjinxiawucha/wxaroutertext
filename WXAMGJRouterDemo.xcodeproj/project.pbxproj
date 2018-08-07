@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839ED9F2119892A004721FD /* WXAShopChildController.m */; };
 		B839EDA32119C31C004721FD /* WXANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839EDA22119C31C004721FD /* WXANavigationController.m */; };
+		B839EDA92119C7B5004721FD /* WXAMIneChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839EDA82119C7B5004721FD /* WXAMIneChildController.m */; };
 		B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A421181C8600AFD5DB /* AppDelegate.m */; };
 		B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AC21181C8800AFD5DB /* Assets.xcassets */; };
 		B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */; };
@@ -30,6 +31,8 @@
 		B839ED9F2119892A004721FD /* WXAShopChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAShopChildController.m; sourceTree = "<group>"; };
 		B839EDA12119C31C004721FD /* WXANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXANavigationController.h; sourceTree = "<group>"; };
 		B839EDA22119C31C004721FD /* WXANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXANavigationController.m; sourceTree = "<group>"; };
+		B839EDA72119C7B5004721FD /* WXAMIneChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAMIneChildController.h; sourceTree = "<group>"; };
+		B839EDA82119C7B5004721FD /* WXAMIneChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAMIneChildController.m; sourceTree = "<group>"; };
 		B84E86A021181C8600AFD5DB /* WXAMGJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXAMGJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E86A321181C8600AFD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84E86A421181C8600AFD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				B84E86E02118394300AFD5DB /* WXAMineController.h */,
 				B84E86E12118394300AFD5DB /* WXAMineController.m */,
+				B839EDA72119C7B5004721FD /* WXAMIneChildController.h */,
+				B839EDA82119C7B5004721FD /* WXAMIneChildController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 			files = (
 				B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */,
 				B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */,
+				B839EDA92119C7B5004721FD /* WXAMIneChildController.m in Sources */,
 				B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */,
 				B8734BF021184CA40095F3F2 /* WXAHomeCellDetailController.m in Sources */,
 				B839EDA32119C31C004721FD /* WXANavigationController.m in Sources */,

@@ -4,34 +4,76 @@
 //
 //  Created by 吴晓安 on 2018/8/6.
 //  Copyright © 2018年 WXA. All rights reserved.
-//
+//  个人中心控制器
 
 #import "WXAMineController.h"
 
 @interface WXAMineController ()
+<
+    UITableViewDelegate,
+    UITableViewDataSource
+>
+
+@property (nullable, nonatomic, strong)     UITableView     *tableView;
 
 @end
 
 @implementation WXAMineController
 
+
++ (void)load{
+    
+    [MGJRouter registerURLPattern:@"WXA://minVC" toObjectHandler:^id(NSDictionary *routerParameters) {
+        return NSStringFromClass(self);
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self tableViewDefuleConfig];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (indexPath.row == 4) {
+        NSString *vcName = [MGJRouter objectForURL:@"WXA://mineChildVC"];
+        [self.navigationController pushViewController:[[NSClassFromString(vcName) alloc]init] animated:NO];
+    }
+    if (indexPath.row == 5) {
+         NSString *name = [MGJRouter objectForURL:@"WXA://mineChild/data"];
+        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        cell.textLabel.text   = name;
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tableViewDefuleConfig{
+    
+    [self.view addSubview:self.tableView];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 20;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell     *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text       = [NSString stringWithFormat:@"minVC -- num %zd",indexPath.row];
+    return cell;
+}
+
+- (nullable UITableView *)tableView{
+    
+    if (!_tableView) {
+        _tableView              = [[UITableView alloc] initWithFrame:CGRectMake(0, 64,self.view.frame.size.width , self.view.frame.size.height - 64 -49)];
+        _tableView.delegate     = self;
+        _tableView.dataSource   = self;
+    }
+    return _tableView;
+}
+
 
 @end
