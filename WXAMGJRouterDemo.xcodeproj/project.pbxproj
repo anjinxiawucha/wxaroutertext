@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839ED9F2119892A004721FD /* WXAShopChildController.m */; };
+		B839EDA32119C31C004721FD /* WXANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839EDA22119C31C004721FD /* WXANavigationController.m */; };
 		B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A421181C8600AFD5DB /* AppDelegate.m */; };
 		B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AC21181C8800AFD5DB /* Assets.xcassets */; };
 		B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */; };
 		B84E86B321181C8800AFD5DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86B221181C8800AFD5DB /* main.m */; };
 		B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86BB21181C9D00AFD5DB /* MGJRouter.m */; };
 		B84E86C021182BFF00AFD5DB /* WXATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86BF21182BFF00AFD5DB /* WXATabBarController.m */; };
-		B84E86C321182C2200AFD5DB /* WXANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86C221182C2200AFD5DB /* WXANavigationController.m */; };
 		B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86C521182C3400AFD5DB /* WXABaseController.m */; };
 		B84E86D92118390B00AFD5DB /* WXAHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86D82118390B00AFD5DB /* WXAHomeController.m */; };
 		B84E86DC2118391E00AFD5DB /* WXAShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86DB2118391E00AFD5DB /* WXAShopController.m */; };
@@ -28,6 +28,8 @@
 		B839ED9D211964D3004721FD /* WXAPushViewControllerURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAPushViewControllerURL.h; sourceTree = "<group>"; };
 		B839ED9E2119892A004721FD /* WXAShopChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAShopChildController.h; sourceTree = "<group>"; };
 		B839ED9F2119892A004721FD /* WXAShopChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAShopChildController.m; sourceTree = "<group>"; };
+		B839EDA12119C31C004721FD /* WXANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXANavigationController.h; sourceTree = "<group>"; };
+		B839EDA22119C31C004721FD /* WXANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXANavigationController.m; sourceTree = "<group>"; };
 		B84E86A021181C8600AFD5DB /* WXAMGJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXAMGJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E86A321181C8600AFD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84E86A421181C8600AFD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		B84E86BB21181C9D00AFD5DB /* MGJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGJRouter.m; sourceTree = "<group>"; };
 		B84E86BE21182BFF00AFD5DB /* WXATabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXATabBarController.h; sourceTree = "<group>"; };
 		B84E86BF21182BFF00AFD5DB /* WXATabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXATabBarController.m; sourceTree = "<group>"; };
-		B84E86C121182C2200AFD5DB /* WXANavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXANavigationController.h; sourceTree = "<group>"; };
-		B84E86C221182C2200AFD5DB /* WXANavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXANavigationController.m; sourceTree = "<group>"; };
 		B84E86C421182C3400AFD5DB /* WXABaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXABaseController.h; sourceTree = "<group>"; };
 		B84E86C521182C3400AFD5DB /* WXABaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXABaseController.m; sourceTree = "<group>"; };
 		B84E86D72118390B00AFD5DB /* WXAHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAHomeController.h; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 			children = (
 				B84E86BE21182BFF00AFD5DB /* WXATabBarController.h */,
 				B84E86BF21182BFF00AFD5DB /* WXATabBarController.m */,
-				B84E86C121182C2200AFD5DB /* WXANavigationController.h */,
-				B84E86C221182C2200AFD5DB /* WXANavigationController.m */,
+				B839EDA12119C31C004721FD /* WXANavigationController.h */,
+				B839EDA22119C31C004721FD /* WXANavigationController.m */,
 				B84E86C421182C3400AFD5DB /* WXABaseController.h */,
 				B84E86C521182C3400AFD5DB /* WXABaseController.m */,
 			);
@@ -340,12 +340,12 @@
 				B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */,
 				B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */,
 				B8734BF021184CA40095F3F2 /* WXAHomeCellDetailController.m in Sources */,
+				B839EDA32119C31C004721FD /* WXANavigationController.m in Sources */,
 				B84E86D92118390B00AFD5DB /* WXAHomeController.m in Sources */,
 				B84E86DF2118393200AFD5DB /* WXADetailController.m in Sources */,
 				B84E86C021182BFF00AFD5DB /* WXATabBarController.m in Sources */,
 				B84E86DC2118391E00AFD5DB /* WXAShopController.m in Sources */,
 				B84E86B321181C8800AFD5DB /* main.m in Sources */,
-				B84E86C321182C2200AFD5DB /* WXANavigationController.m in Sources */,
 				B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */,
 				B84E86E22118394300AFD5DB /* WXAMineController.m in Sources */,
 			);
