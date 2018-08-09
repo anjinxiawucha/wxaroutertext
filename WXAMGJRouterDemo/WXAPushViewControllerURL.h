@@ -24,9 +24,25 @@
 #import "WXAShopController.h"
 
 /*
- *商店自控制器:WXA://shop/childViewController
+ *商店模块:WXA://shop/childViewController
  */
 #import "WXAShopChildController.h"
+
+/*
+ *个人中心模块:WXA://minVC
+ */
+#import "WXAMineController.h"
+
+/*
+ *个人中心模块:WXA://mineChildVC
+ */
+#import "WXAMIneChildController.h"
+
+/*
+ *获取子模块的数据
+ *个人中心模块:WXA://mineChild/data
+ */
+#import "WXAMIneChildController.h"
 
 
 #endif /* WXAPushViewControllerURL_h */

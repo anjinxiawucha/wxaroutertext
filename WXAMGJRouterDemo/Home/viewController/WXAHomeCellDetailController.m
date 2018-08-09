@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"首页cell详情";
     self.view.backgroundColor = [UIColor redColor];
     NSLog(@"push is finshed");
 }

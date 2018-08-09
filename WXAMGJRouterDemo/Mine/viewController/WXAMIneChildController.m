@@ -23,9 +23,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     
-    [MGJRouter registerURLPattern:@"WXA://mineChild/data" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return self.name;
-    }];
+    [WXARouterManager registerURL:@"WXA://mineChild/data" Data:self.name completion:nil];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

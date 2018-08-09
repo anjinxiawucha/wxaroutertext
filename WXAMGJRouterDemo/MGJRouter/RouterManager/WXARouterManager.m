@@ -36,9 +36,37 @@ static NSString *kPrefixRouterString = @"WXA://";
         return;
     }
     [MGJRouter registerURLPattern:url toObjectHandler:^id(NSDictionary *routerParameters) {
+        if (completion) {
         completion(routerParameters);
+        }
         return NSStringFromClass(myclass);
     }];
+}
+
++ (id)getDataWithRegisterURL:(NSString *)url
+{
+    
+    if ([self checkUrl:url] == NO) {
+        return nil;
+    }
+    id data = [MGJRouter objectForURL:url];
+    return data;
+}
+
++ (void)registerURL:(NSString *)url
+               Data:(id)data
+         completion:(void (^)(NSDictionary *))completion
+{
+    if ([self checkUrl:url] == NO) {
+        return;
+    }
+    [MGJRouter registerURLPattern:url toObjectHandler:^id(NSDictionary *routerParameters) {
+        if (completion) {
+            completion(routerParameters);
+        }
+        return data;
+    }];
+    
 }
 
 #pragma mark - push or present
@@ -100,7 +128,7 @@ UIViewController* WXAVisibalController() {
     }
     
     if (![url hasPrefix:kPrefixRouterString]) {
-        NSLog(@"url format is error, has no / prefix");
+        NSLog(@"url format is error, has no %@",kPrefixRouterString);
         return NO;
     }
     return YES;

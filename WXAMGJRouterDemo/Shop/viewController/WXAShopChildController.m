@@ -30,6 +30,7 @@ static NSDictionary *parameters;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title      = @"商店自控制器";
     [self.view addSubview:self.label];
     self.label.text = parameters[@"version"];
     NSLog(@"parameters = %@",parameters);

@@ -28,7 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self tableViewDefuleConfig];
 }
 
@@ -38,9 +37,9 @@
         [WXARouterManager pushWithUrl:@"WXA://mineChildVC"];
     }
     if (indexPath.row == 5) {
-        NSString *name = [MGJRouter objectForURL:@"WXA://mineChild/data"];
+        id  data  = [WXARouterManager getDataWithRegisterURL:@"WXA://mineChild/data"];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        cell.textLabel.text   = name;
+        cell.textLabel.text   = data;
     }
 }
 
@@ -48,6 +47,7 @@
     
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
