@@ -10,6 +10,7 @@
 #define WXAPrefixHeader_pch
 
 #import "MGJRouter.h"
+#import "WXARouterManager.h"
 //#import "WXAPushViewControllerURL.h"
 
 #endif /* WXAPrefixHeader_pch */

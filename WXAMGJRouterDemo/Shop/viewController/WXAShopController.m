@@ -16,9 +16,7 @@
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://shop" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://shop" forClass:[self class]];
 }
 
 - (void)viewDidLoad {
@@ -32,8 +30,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSString  *controllerName = [MGJRouter objectForURL:@"WXA://shop/childViewController/?version=230&name=王亚"];
-    [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc]init] animated:YES];
+    
+    [WXARouterManager pushWithUrl:@"WXA://shop/childViewController/?version=230&name=王亚"];
 }
 
 

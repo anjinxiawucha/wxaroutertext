@@ -23,9 +23,7 @@
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://home" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://home" forClass:[self class]];
 }
 
 
@@ -36,10 +34,8 @@
 /*********************************************DELEGATE***********************************************/
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
     
-      NSString *controllerName = [MGJRouter objectForURL:@"WXA://home/homeCell"];
-      [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init] animated:YES];
+    [WXARouterManager pushWithUrl:@"WXA://home/homeCell"];
     
 }
 

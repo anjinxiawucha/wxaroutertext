@@ -20,16 +20,16 @@ static NSDictionary *parameters;
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://shop/childViewController" toObjectHandler:^id(NSDictionary *routerParameters) {
-        parameters = routerParameters;
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://shop/childViewController"
+                         forClass:[self class]
+                       completion:^(NSDictionary *routerParameters) {
+                           parameters = routerParameters;
+                       }];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"parameters = %@", parameters);
     [self.view addSubview:self.label];
     self.label.text = parameters[@"version"];
     NSLog(@"parameters = %@",parameters);

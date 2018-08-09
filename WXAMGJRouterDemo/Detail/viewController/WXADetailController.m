@@ -21,8 +21,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    NSString *controllerName    = [MGJRouter objectForURL:@"WXA://home/homeCell"];
-    [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init] animated:YES];
+    [WXARouterManager pushWithUrl:@"WXA://home/homeCell"];
     
 }
 

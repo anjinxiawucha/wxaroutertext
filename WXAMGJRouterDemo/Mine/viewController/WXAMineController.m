@@ -23,9 +23,7 @@
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://minVC" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://minVC" forClass:[self class]];
 }
 
 - (void)viewDidLoad {
@@ -37,11 +35,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 4) {
-        NSString *vcName = [MGJRouter objectForURL:@"WXA://mineChildVC"];
-        [self.navigationController pushViewController:[[NSClassFromString(vcName) alloc]init] animated:NO];
+        [WXARouterManager pushWithUrl:@"WXA://mineChildVC"];
     }
     if (indexPath.row == 5) {
-         NSString *name = [MGJRouter objectForURL:@"WXA://mineChild/data"];
+        NSString *name = [MGJRouter objectForURL:@"WXA://mineChild/data"];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
         cell.textLabel.text   = name;
     }

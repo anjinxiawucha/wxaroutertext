@@ -10,6 +10,7 @@
 		B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839ED9F2119892A004721FD /* WXAShopChildController.m */; };
 		B839EDA32119C31C004721FD /* WXANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839EDA22119C31C004721FD /* WXANavigationController.m */; };
 		B839EDA92119C7B5004721FD /* WXAMIneChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839EDA82119C7B5004721FD /* WXAMIneChildController.m */; };
+		B8424801211C127C00705FCC /* WXARouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8424800211C127C00705FCC /* WXARouterManager.m */; };
 		B84E86A521181C8600AFD5DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E86A421181C8600AFD5DB /* AppDelegate.m */; };
 		B84E86AD21181C8800AFD5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AC21181C8800AFD5DB /* Assets.xcassets */; };
 		B84E86B021181C8800AFD5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E86AE21181C8800AFD5DB /* LaunchScreen.storyboard */; };
@@ -33,6 +34,8 @@
 		B839EDA22119C31C004721FD /* WXANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXANavigationController.m; sourceTree = "<group>"; };
 		B839EDA72119C7B5004721FD /* WXAMIneChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXAMIneChildController.h; sourceTree = "<group>"; };
 		B839EDA82119C7B5004721FD /* WXAMIneChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXAMIneChildController.m; sourceTree = "<group>"; };
+		B84247FF211C127C00705FCC /* WXARouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXARouterManager.h; sourceTree = "<group>"; };
+		B8424800211C127C00705FCC /* WXARouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXARouterManager.m; sourceTree = "<group>"; };
 		B84E86A021181C8600AFD5DB /* WXAMGJRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXAMGJRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E86A321181C8600AFD5DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84E86A421181C8600AFD5DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B84247FB211C0C8500705FCC /* RouterManager */ = {
+			isa = PBXGroup;
+			children = (
+				B84247FF211C127C00705FCC /* WXARouterManager.h */,
+				B8424800211C127C00705FCC /* WXARouterManager.m */,
+			);
+			path = RouterManager;
+			sourceTree = "<group>";
+		};
 		B84E869721181C8600AFD5DB = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +123,7 @@
 			children = (
 				B84E86BA21181C9D00AFD5DB /* MGJRouter.h */,
 				B84E86BB21181C9D00AFD5DB /* MGJRouter.m */,
+				B84247FB211C0C8500705FCC /* RouterManager */,
 			);
 			name = MGJRouter;
 			path = WXAMGJRouterDemo/MGJRouter;
@@ -342,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84E86C621182C3400AFD5DB /* WXABaseController.m in Sources */,
+				B8424801211C127C00705FCC /* WXARouterManager.m in Sources */,
 				B839EDA02119892A004721FD /* WXAShopChildController.m in Sources */,
 				B839EDA92119C7B5004721FD /* WXAMIneChildController.m in Sources */,
 				B84E86BC21181C9D00AFD5DB /* MGJRouter.m in Sources */,

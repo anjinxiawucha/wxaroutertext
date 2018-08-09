@@ -10,21 +10,13 @@
 
 @interface WXAHomeCellDetailController ()
 
-@property (nonatomic) SEL selectedSelector;
-
-@property (nonatomic, nullable, strong) NSDictionary *routerParameters;
-
 @end
-
-
 
 @implementation WXAHomeCellDetailController
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://home/homeCell" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://home/homeCell" forClass:[self class]];
 }
 
 - (void)viewDidLoad {

@@ -18,12 +18,11 @@
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://mineChildVC" toObjectHandler:^id(NSDictionary *routerParameters) {
-        return NSStringFromClass(self);
-    }];
+    [WXARouterManager registerURL:@"WXA://mineChildVC" forClass:[self class]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
+    
     [MGJRouter registerURLPattern:@"WXA://mineChild/data" toObjectHandler:^id(NSDictionary *routerParameters) {
         return self.name;
     }];
