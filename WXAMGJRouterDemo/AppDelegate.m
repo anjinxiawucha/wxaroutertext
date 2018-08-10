@@ -24,7 +24,7 @@
 
 - (void)defaultConfiguration{
     
-    NSString  *controllerName           = [MGJRouter objectForURL:@"WXA://tabBarVC/?VC1=WXAHomeController&VC2=WXAShopController&VC3=WXADetailController&VC4=WXAMineController"];
+    NSString    *controllerName         = [WXARouterManager getDataWithRegisterURL:@"WXA://tabBarVC/?VC1=WXAHomeController&VC2=WXAShopController&VC3=WXADetailController&VC4=WXAMineController"];
     self.window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController      = [[NSClassFromString(controllerName) alloc] init];
     self.window.backgroundColor         = [UIColor whiteColor];

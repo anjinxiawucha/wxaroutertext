@@ -20,9 +20,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
     [WXARouterManager pushWithUrl:@"WXA://home/homeCell"];
-    
 }
 
 @end

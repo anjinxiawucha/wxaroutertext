@@ -24,33 +24,44 @@
 
  @param url url
  @param myclass 注册者
- @param completion 回调
+ @param completion 对调用者传递过来的数据做处理
  */
 + (void)registerURL:(NSString *)url
            forClass:(Class)myclass
-         completion:(void(^)(NSDictionary *routerParameters))completion;
+         completion:(void(^)(NSDictionary *))completion;
+
+/**
+ 注册且返回给调用者数据
+ 
+ @param url url
+ @param data data
+ @param completion 将data传递给调用者
+ */
++ (void)registerURL:(NSString *)url
+               Data:(id)data
+         completion:(void (^)(NSDictionary *))completion;
 /**
  push
 
  @param url url
  */
 + (void)pushWithUrl:(NSString *)url;
+
+/**
+ push
+
+ @param url url
+ @param dataInfo 数据
+ */
++ (void)pushWithUrl:(NSString *)url withDataInfo:(NSDictionary *)dataInfo;
+
 /**
  present
 
  @param url url
  */
 + (void)presentWithUrl:(NSString *)url;
-/**
- 注册且返回给调用者数据
 
- @param url url
- @param data data
- @param completion 注册这执行
- */
-+ (void)registerURL:(NSString *)url
-               Data:(id)data
-         completion:(void (^)(NSDictionary *routerParameters))completion;
 /**
  获取注册者的数据
 
@@ -60,4 +71,14 @@
 + (id)getDataWithRegisterURL:(NSString *)url;
 
 
+
+
+/**
+ 拼接URL和参数(注意:参数为字典)
+
+ @param urlStr urltrl
+ @param parameters 参数
+ @return 带参数的Url
+ */
++ (NSString *)generateWithURL:(NSString *)urlStr parameters:(NSArray <NSDictionary *> *)parameters;
 @end

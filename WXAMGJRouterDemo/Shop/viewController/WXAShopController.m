@@ -30,8 +30,12 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    [WXARouterManager pushWithUrl:@"WXA://shop/childViewController/?version=230&name=王亚"];
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[@"name"]      = @"Jim";
+    dic[@"age"]       = @"19";
+    [WXARouterManager pushWithUrl:@"WXA://shop/childViewController/" withDataInfo:dic];
+//    NSString *str  = [WXARouterManager generateWithURL:@"WXA://shop/childViewController" parameters:@[dic]];
+//    [WXARouterManager pushWithUrl:str];
 }
 
 

@@ -18,11 +18,11 @@ static NSDictionary *parameters;
 
 + (void)load{
     
-    [MGJRouter registerURLPattern:@"WXA://tabBarVC" toObjectHandler:^id(NSDictionary *routerParameters) {
-        parameters = routerParameters;
-        return NSStringFromClass(self);
-    }];
-    
+    [WXARouterManager registerURL:@"WXA://tabBarVC"
+                         forClass:[self class]
+                       completion:^(NSDictionary *routerParameters) {
+                           parameters = routerParameters;
+                       }];
 }
 
 - (void)viewDidLoad {

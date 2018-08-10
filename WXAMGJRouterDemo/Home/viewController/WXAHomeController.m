@@ -30,13 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self tableViewConfig];
+    [MGJRouter openURL:@"WXA://shop/childViewController/?name=Jim&age=19"];
 }
 /*********************************************DELEGATE***********************************************/
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     [WXARouterManager pushWithUrl:@"WXA://home/homeCell"];
-    
 }
 
 /*********************************************PUBLIC*************************************************/

@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WXAMGJRouterDemo/MGJRouter/MGJRouter.m"
-            timestampString = "555498474.83342"
+            filePath = "WXAMGJRouterDemo/Mine/viewController/WXAMineController.m"
+            timestampString = "555578968.117517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
-            landmarkName = "-extractParametersFromURL:matchExactly:"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WXAMGJRouterDemo/Mine/viewController/WXAMineController.m"
-            timestampString = "555498474.833733"
+            filePath = "WXAMGJRouterDemo/MGJRouter/MGJRouter.m"
+            timestampString = "555578968.117923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "+openURL:withUserInfo:completion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

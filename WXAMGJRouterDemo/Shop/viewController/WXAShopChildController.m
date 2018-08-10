@@ -32,8 +32,10 @@ static NSDictionary *parameters;
     // Do any additional setup after loading the view.
     self.title      = @"商店自控制器";
     [self.view addSubview:self.label];
-    self.label.text = parameters[@"version"];
-    NSLog(@"parameters = %@",parameters);
+    NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    data                      = parameters[MGJRouterParameterUserInfo];
+    self.label.text           = data[@"name"];
+    NSLog(@"parameters = %@",data[@"name"]);
 }
 
 - (nullable UILabel *)label{
