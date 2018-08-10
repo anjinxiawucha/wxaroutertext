@@ -34,8 +34,6 @@
     dic[@"name"]      = @"Jim";
     dic[@"age"]       = @"19";
     [WXARouterManager pushWithUrl:@"WXA://shop/childViewController/" withDataInfo:dic];
-//    NSString *str  = [WXARouterManager generateWithURL:@"WXA://shop/childViewController" parameters:@[dic]];
-//    [WXARouterManager pushWithUrl:str];
 }
 
 
